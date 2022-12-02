@@ -14,14 +14,15 @@ func ReadFromFile(path string) []byte {
 	return content
 }
 
-func Sum[T any](list []T) int {
+func Sum[T ~string | ~int](list []T) int {
 	sum := 0
 	for _, val := range list {
-		if v, ok := any(val).(int); ok {
-			sum += v
-		} else if v, ok := any(val).(string); ok {
-			n, _ := strconv.Atoi(v)
-			sum += n
+		switch any(val).(type) {
+		case int:
+			sum += any(val).(int)
+		case string:
+			num, _ := strconv.Atoi(any(val).(string))
+			sum += num
 		}
 	}
 	return sum
