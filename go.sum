@@ -1,2 +1,4 @@
+github.com/meirf/gopart v0.0.0-20180520194036-37e9492a85a8 h1:7TJiWD1knYDpOAPyFBoKqoyvlsa+UwDw0kv0jVN5Mrk=
+github.com/meirf/gopart v0.0.0-20180520194036-37e9492a85a8/go.mod h1:Uz8uoD6o+eQN19hr6Yro/qKvW+KP6olFq+PK/Nn7gCE=
 golang.org/x/exp v0.0.0-20221126150942-6ab00d035af9 h1:yZNXmy+j/JpX19vZkVktWqAo7Gny4PBWYYK3zskGpx4=
 golang.org/x/exp v0.0.0-20221126150942-6ab00d035af9/go.mod h1:CxIveKay+FTh1D0yPZemJVgC/95VzuuOLq5Qi4xnoYc=

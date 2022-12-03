@@ -27,3 +27,12 @@ func Sum[T ~string | ~int](list []T) int {
 	}
 	return sum
 }
+
+// stolen from https://gobyexample.com/collection-functions 
+func Map(vs []string, f func(string) string) []string {
+	vsm := make([]string, len(vs))
+	for i, v := range vs {
+		vsm[i] = f(v)
+	}
+	return vsm
+}
