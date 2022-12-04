@@ -29,8 +29,9 @@ func Sum[T ~string | ~int](list []T) int {
 }
 
 // stolen from https://gobyexample.com/collection-functions 
-func Map(vs []string, f func(string) string) []string {
-	vsm := make([]string, len(vs))
+// tweaked to work with generics
+func Map[T, V ~string | ~int](vs []T, f func(T) V) []V {
+	vsm := make([]V, len(vs))
 	for i, v := range vs {
 		vsm[i] = f(v)
 	}
